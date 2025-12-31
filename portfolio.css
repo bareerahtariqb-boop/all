@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    color: white;
+}
+
+/* Header */
+header{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li{
+    margin-left: 20px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero */
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c")
+    center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 50px;
+    color: #00ffd5;
+}
+
+.hero button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #00ffd5;
+    cursor: pointer;
+}
+
+/* Sections */
+.section{
+    padding: 80px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.section.dark{
+    background: #000;
+}
+
+.title{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text{
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.8;
+}
+
+/* Skills */
+.skills{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill{
+    background: #00ffd5;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Projects */
+.projects{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    background: #222;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    background: black;
+    text-align: center;
+    padding: 15px;
+    opacity: 0.7;
+}
